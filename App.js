@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { StatusBar } from 'expo-status-bar';
 import { Button, FlatList, StyleSheet, Text, TextInput, View, Pressable, Alert } from 'react-native';
-import { COLORS } from "./src/constants/Color";
+import { COLORS } from "./src/constans/Color";
 
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
           style={styles.button}
           onPress={() => Alert.alert('Simple Button pressed')}
         >
-          <Text>Guardar</Text>
+          <Text style={styles.textButton}>Guardar</Text>
         </Pressable>
       </View>
       <View style={styles.listItem}>
@@ -64,12 +64,9 @@ const styles = StyleSheet.create({
   containerInput: {
     flex: 1,
     borderBottomColor: "#ccc",
-    marginBottom: 450,
+    marginBottom: 300,
     paddingHorizontal: 2,
     paddingVertical: 4,
-    // flexDirection: "row",
-    // justifyContent: "space-between",
-    // alignItems:"center",
   },
 
   input: {
@@ -91,8 +88,17 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    textDecorationStyle: "black",
+    backgroundColor: "red",
+    borderRadius: 20,
+    justifyContent: "center",
     height: 70,
+  },
+
+  textButton:{
+    textAlign: "center",
+    color: "fff",
+    fontSize: 25,
+    fontWeight: 650,
   },
 
   listItem: {
