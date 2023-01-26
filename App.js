@@ -24,7 +24,7 @@ export default function App() {
           style={styles.button}
           onPress={() => Alert.alert('Simple Button pressed')}
         >
-          <Text style={styles.textButton}>Guardar</Text>
+          <Text style={styles.textButton}>Guardar tarea</Text>
         </Pressable>
       </View>
       <View style={styles.listItem}>
